@@ -1,2 +1,2 @@
-# actividadgrupal
+# proyecto
 Trabajo Practico Integrador
