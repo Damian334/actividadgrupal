@@ -20,8 +20,9 @@
 
 **4. Ejemplo de Interacción (Salida Esperada)**
 
+```text
 ========================================
-    ⚽ RECOMENDADOR JUEGOS — TERMINAL
+    RECOMENDADOR JUEGOS — TERMINAL
 ========================================
 Opción seleccionada: 1 (Buscar juego)
 Ingrese el título: FIFA
@@ -31,7 +32,7 @@ Ingrese el título: FIFA
 ╠══════════════════════════════════════════╣
 ║ Si te gustó FIFA, quizás te interesen:   ║
 ║                                          ║
-║ 1. Football Manager 2024       ⭐ 8.9     ║
-║ 2. eFootball 2024              ⭐ 7.5     ║
-║ 3. Rocket League               ⭐ 8.6     ║
+║ 1. Football Manager 2024     Score: 8.9  ║
+║ 2. eFootball 2024            Score: 7.5  ║
+║ 3. Rocket League             Score: 8.6  ║
 ╚══════════════════════════════════════════╝
