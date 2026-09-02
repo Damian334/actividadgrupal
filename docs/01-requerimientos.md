@@ -27,11 +27,11 @@ Opción seleccionada: 1 (Buscar juego)
 Ingrese el título: FIFA
 
 ╔══════════════════════════════════════════╗
-║         ⚽ RECOMENDADOR JUEGOS            ║
+║          RECOMENDADOR JUEGOS             ║
 ╠══════════════════════════════════════════╣
 ║ Si te gustó FIFA, quizás te interesen:   ║
 ║                                          ║
-║ 1. Football Manager 2024     ⭐ 8.9      ║
-║ 2. eFootball 2024            ⭐ 7.5      ║
-║ 3. Rocket League             ⭐ 8.6      ║
+║ 1. Football Manager 2024       ⭐ 8.9     ║
+║ 2. eFootball 2024              ⭐ 7.5     ║
+║ 3. Rocket League               ⭐ 8.6     ║
 ╚══════════════════════════════════════════╝
