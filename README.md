@@ -25,3 +25,32 @@ Para mantener el código ordenado y escalable, dividimos la solución en capas i
    ```bash
    git clone https://github.com/Damian334/actividadgrupal.git
    cd TrabajoPracticoVideojuegos
+
+
+
+classDiagram
+    class Juego {
+        - int _id
+        - str _titulo
+        - str _genero
+        - str _desarrollador
+        - float _rating
+        - float _precio
+        + id() int
+        + titulo() str
+        + genero() str
+        + desarrollador() str
+        + rating() float
+        + precio() float
+        + es_similar(otro_juego) bool
+    }
+
+    class CatalogoJuegos {
+        - list _juegos
+        + agregar_juego(juego: Juego) bool
+        + buscar_por_titulo(titulo: str) Juego
+        + filtrar_por_genero(genero: str) list
+        + obtener_top_n(n: int) list
+    }
+
+    CatalogoJuegos "1" o-- "*" Juego : almacena
