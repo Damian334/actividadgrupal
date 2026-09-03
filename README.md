@@ -9,8 +9,8 @@ Elegimos el dominio de videojuegos tomando como punto de partida títulos deport
 
 ## 👥 Equipo de Desarrollo
 * **José** — Implementación del dominio (`modelos/`), estructura base de objetos y Git workflow.
-* **[Nombre Integrante 2]** — Interfaz de usuario en terminal (`ui/`) y diseño de menú.
-* **[Nombre Integrante 3]** — Carga y gestión de datasets (`datos/`) y requerimientos.
+* **Damian** — Interfaz de usuario en terminal (`ui/`) y diseño de menú.
+* **Agustin** — Carga y gestión de datasets (`datos/`) y requerimientos.
 
 ## 🏗️ Decisiones de Diseño y Arquitectura
 Para mantener el código ordenado y escalable, dividimos la solución en capas independientes:
