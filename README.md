@@ -3,9 +3,9 @@ Este es un trabajo practico integrador de la catedra de Estructura de Datos de l
 
 ## Integrantes
 Los integrantes de este proyecto son:
-- Agustín Jerez
+- Agustin Jerez
 - Jose Estigarribia
-- Damián Frontini
+- Damian Frontini
 
 ## GameFinderBot
 En este trabajo se presenta GameFinderBot un asistente virtual que recomienda videojuegos al usuario, realizado mediante el lenguaje de Python.
