@@ -11,5 +11,5 @@ Los integrantes de este proyecto son:
 En este trabajo se presenta GameFinderBot un asistente virtual que recomienda videojuegos al usuario, realizado mediante el lenguaje de Python.
 
 ## Estado
-- TP0:
+- TP0: completado
 - TP1: 
