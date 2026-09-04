@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "titulo": "FIFA 24",
+      "genero": "Deportes",
+      "desarrollador": "EA Sports",
+      "rating": 7.8,
+      "precio": 60.0
+    },
+    {
+      "id": 2,
+      "titulo": "Football Manager 2024",
+      "genero": "Deportes",
+      "desarrollador": "Sports Interactive",
+      "rating": 8.9,
+      "precio": 50.0
+    },
+    {
+      "id": 3,
+      "titulo": "Rocket League",
+      "genero": "Deportes",
+      "desarrollador": "Psyonix",
+      "rating": 8.6,
+      "precio": 0.0
+    },
+    {
+      "id": 4,
+      "titulo": "eFootball 2024",
+      "genero": "Deportes",
+      "desarrollador": "Konami",
+      "rating": 7.5,
+      "precio": 0.0
+    }
+  ]
