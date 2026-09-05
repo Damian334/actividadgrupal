@@ -2,20 +2,31 @@
 
 ```mermaid
 classDiagram
-    class videojuego{
-        -nombre: str
-        -genero: str
-        -rating: float
+    class Juego {
+        -int id
+        -string titulo
+        -string genero
+        -string desarrollador
+        -float rating
+        -float precio
+        +getId() int
+        +getTitulo() string
+        +getGenero() string
+        +getDesarrollador() string
+        +getRating() float
+        +getPrecio() float
+        +es_similar(otro) bool
     }
 
-    class Catalogo{
-        -videojuegos: list
-        +buscar(nombre) Elemento
-        +listar() list
-        +filtrar(genero) list
+    class CatalogoJuegos {
+        -list juegos
+        +agregar_juego(juego) bool
+        +buscar_por_titulo(titulo) Juego
+        +filtrar_por_genero(genero) list
+        +obtener_top_n(n) list
     }
 
- Catalogo "1" o-- "*" Elemento : contiene
+    CatalogoJuegos "1" o-- "*" Juego : almacena
 ```
 
 ```text
@@ -23,7 +34,7 @@ classDiagram
 Título: Minecraft
 
 ╔══════════════════════════════════════╗
-║           🎬 CINEBOT                 ║
+║           🎬 CINEBOT                ║
 ╠══════════════════════════════════════╣
 ║ Si te gustó Minecraft, quizás te     ║
 ║ interesen:                           ║
