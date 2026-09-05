@@ -1,23 +1,18 @@
-# GameFinderBot — Sistema Recomendador de Videojuegos
-
-## Presentación
-
-Trabajo Práctico Integrador para la asignatura **Estructura de Datos** de la Tecnicatura Universitaria en Programación de la **Universidad Nacional Guillermo Brown (UNAB)**.
+# Presentacion
+Este es un trabajo practico integrador de la catedra de Estructura de Datos de la carrera de Tecnicatura en Programación de la Universidad Nacional Guillermo Brown.
 
 ## Integrantes
+Los integrantes de este proyecto son:
+- Agustin Jerez
+- Jose Estigarribia
+- Damian Frontini
 
-* Agustín Jerez
-* José Estigarribia
-* Damián Frontini
+## GameBot
+En este trabajo se presenta GameFinderBot un asistente virtual que recomienda videojuegos al usuario, realizado mediante el lenguaje de Python.
 
-## Descripción del Proyecto
-
-GameFinderBot es un asistente virtual desarrollado en Python diseñado para recomendar videojuegos a los usuarios. El sistema gestiona un catálogo de títulos, permitiendo realizar búsquedas por título, aplicar filtros dinámicos por género y consultar información detallada de cada videojuego mediante una interfaz interactiva de consola.
-
-## Estado del Proyecto
-
-* **TP0 — Propuesta del proyecto:** Completado
-* **TP1 — MVP funcional con persistencia JSON:** Completado
+## Estado
+- TP0: completado
+- TP1:
 
 ## Arquitectura del Sistema
 
