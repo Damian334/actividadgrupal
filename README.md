@@ -1,57 +1,77 @@
-# ⚽ RecomendadorJuegos — Sistema de Recomendación en Python
+# GameFinderBot — Sistema Recomendador de Videojuegos
 
-> Proyecto integrador incremental para la materia **Estructuras de Datos** (UNAB).
+## Presentación
 
-## 💡 Sobre el Proyecto
-¿Terminaste un juego y no sabés qué jugar después? **RecomendadorJuegos** es una aplicación de terminal diseñada para buscar, clasificar y recomendar títulos según tus géneros, valoraciones y desarrolladores preferidos. 
+Trabajo Práctico Integrador para la asignatura **Estructura de Datos** de la Tecnicatura Universitaria en Programación de la **Universidad Nacional Guillermo Brown (UNAB)**.
 
-Elegimos el dominio de videojuegos tomando como punto de partida títulos deportivos (como *FIFA*, *eFootball* o *Football Manager*) para construir relaciones complejas entre datos reales, evolucionando la arquitectura desde POO básica hasta Árboles, Heaps y Grafos.
+## Integrantes
 
-## 👥 Equipo de Desarrollo
-* **José** — Implementación del dominio (`modelos/`), estructura base de objetos y Git workflow.
-* **Damian** — Interfaz de usuario en terminal (`ui/`) y diseño de menú.
-* **Agustin** — Carga y gestión de datasets (`datos/`) y requerimientos.
+* Agustín Jerez
+* José Estigarribia
+* Damián Frontini
 
-## 🏗️ Decisiones de Diseño y Arquitectura
-Para mantener el código ordenado y escalable, dividimos la solución en capas independientes:
+## Descripción del Proyecto
 
-* **`modelos/juego.py`**: Clase entidad con encapsulamiento estricto (`_atributo`) que resguarda la información base (título, rating, género, desarrollador).
-* **`modelos/catalogo.py`**: Lógica de negocio encargada de búsquedas, filtrados y ordenamiento.
-* **`ui/terminal.py`**: Capa de presentación desacoplada; interactúa con el usuario sin conocer la lógica interna.
-* **`datos/`**: Almacenamiento persistente del catálogo.
+GameFinderBot es un asistente virtual desarrollado en Python diseñado para recomendar videojuegos a los usuarios. El sistema gestiona un catálogo de títulos, permitiendo realizar búsquedas por título, aplicar filtros dinámicos por género y consultar información detallada de cada videojuego mediante una interfaz interactiva de consola.
 
-## 🚀 Inicio Rápido
-1. Clonar el repositorio y posicionarse en la raíz:
+## Estado del Proyecto
+
+* **TP0 — Propuesta del proyecto:** Completado
+* **TP1 — MVP funcional con persistencia JSON:** Completado
+
+## Arquitectura del Sistema
+
+El proyecto sigue una estructura modular orientada a objetos que separa responsabilidades en distintas capas:
+
+* **modelos/juego.py:** Define la entidad `Juego` aplicando encapsulamiento estricto mediante atributos protegidos (`_atributo`) y acceso de lectura controlado por `@property`.
+* **modelos/catalogo.py:** Contiene la lógica de negocio para la administración del catálogo, búsquedas y filtrados de la colección.
+* **datos/juegos.json:** Archivo de persistencia que almacena el dataset inicial de videojuegos en formato JSON.
+* **ui/terminal.py:** Gestiona el menú interactivo en consola y la interacción con el usuario.
+* **main.py:** Punto de entrada que carga los datos de inicio e inicializa la aplicación.
+
+## Requisitos e Instalación
+
+### Requisitos previos
+* Python 3.8 o superior
+
+### Instrucciones de ejecución
+
+1. Clonar el repositorio o posicionarse en la carpeta raíz del proyecto:
    ```bash
-   git clone https://github.com/Damian334/actividadgrupal.git
    cd TrabajoPracticoVideojuegos
 
-
+## Diagrama de Clases (UML)
 
 ```mermaid
 classDiagram
     class Juego {
-        -int id
-        -string titulo
-        -string genero
-        -string desarrollador
-        -float rating
-        -float precio
-        +getId() int
-        +getTitulo() string
-        +getGenero() string
-        +getDesarrollador() string
-        +getRating() float
-        +getPrecio() float
-        +es_similar(otro) bool
+        -_id: int
+        -_titulo: str
+        -_genero: str
+        -_desarrollador: str
+        -_rating: float
+        -_precio: float
+        +id: int
+        +titulo: str
+        +genero: str
+        +desarrollador: str
+        +rating: float
+        +precio: float
     }
 
     class CatalogoJuegos {
-        -list juegos
-        +agregar_juego(juego) bool
-        +buscar_por_titulo(titulo) Juego
-        +filtrar_por_genero(genero) list
-        +obtener_top_n(n) list
+        -_juegos: list
+        +cargar_desde_json(ruta_archivo)
+        +agregar_juego(juego)
+        +listar_todos()
+        +buscar_por_titulo(titulo)
+        +filtrar_por_genero(genero)
     }
 
-    CatalogoJuegos "1" o-- "*" Juego : almacena
+    class MenuTerminal {
+        -_catalogo: CatalogoJuegos
+        +ejecutar()
+    }
+
+    CatalogoJuegos "1" *-- "*" Juego : contiene
+    MenuTerminal "1" --> "1" CatalogoJuegos : usa

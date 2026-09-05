@@ -32,4 +32,9 @@ class CatalogoJuegos:
         return [j for j in self._juegos if titulo.lower() in j.titulo.lower()]
 
     def filtrar_por_genero(self, genero: str) -> list:
-        return [j for j in self._juegos if j.genero.lower() == genero.lower()]
+
+        genero_buscado = genero.strip().lower()
+        return [
+            j for j in self._juegos 
+            if genero_buscado in j.genero.lower()
+             ]
