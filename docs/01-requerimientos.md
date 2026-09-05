@@ -1,45 +1,64 @@
-# GameFinderBot — Propuesta del Proyecto y Requerimientos (TP0)
+# GameBot
+Es el asiste virtual que se encargara de buscar, explorar y recomendar distintos videojuegos a partir de caracteristicas y relaciones con titulos que hayas jugado y te gustaran.
 
-## 1. Propuesta del Sistema y Dominio
-* **Nombre del Proyecto:** GameFinderBot (RecomendadorJuegos)
-* **Dominio Elegido:** Videojuegos y Deportes Electrónicos. Posee un amplio catálogo de información (títulos, géneros, desarrolladores, puntuaciones) ideal para aplicar estructuras de datos, algoritmos de búsqueda y filtrados.
-* **Problema a Resolver:** Los jugadores que completan o se saturan de un videojuego suelen no saber qué alternativa similar jugar a continuación según sus preferencias de género, mecánicas o estilos.
-* **Usuario Objetivo:** Jugadores que buscan descubrir nuevos títulos afines a sus sagas y juegos favoritos.
+## Dominio elegido
+Elegimos los videojuegos ya que tiene una gran base de información, como nombres, generos, puntuaciones, plataformas y relaciones entre titulos.
+Además es algo que a todos nos gusta ya que es un ambito muy popular hoy en día, uno si tiene una computadora, una consola o incluso en un celular, va a descargar juegos para entrenerse y pasar el rato.
 
-## 2. Requerimientos Funcionales (RF)
-| ID | Requerimiento Funcional | Descripción |
-|---|---|---|
-| **RF01** | Buscar videojuego | Permitir la búsqueda de un juego por su título exacto o parcial. |
-| **RF02** | Listar catálogo | Mostrar el listado completo de los juegos registrados en el sistema. |
-| **RF03** | Filtrar por género | Filtrar el catálogo según un género específico (ej. Deportes, Acción, RPG). |
-| **RF04** | Ranking (Top N) | Calcular y mostrar los videojuegos mejor valorados por el público. |
-| **RF05** | Recomendar títulos | Sugerir alternativas basadas en coincidencias de desarrollador o género. |
+## Problema que resuelve
+Los jugadores pueden tener un problema al elegir que jugar despues de haber completado un videojuegos que los engancho demaciado.
+Es por eso que GameBot busca solucionar este problema, ofreciendo recomendaciones a partir de videojuegos conocidos y sus características.
 
-## 3. Requerimientos No Funcionales (RNF)
-| ID | Requerimiento No Funcional | Descripción |
-|---|---|---|
-| **RNF01** | Interfaz CLI | La aplicación funcionará exclusivamente en interfaz de línea de comandos (Terminal). |
-| **RNF02** | Encapsulamiento | Los datos de la clase `Juego` deberán protegerse con encapsulamiento estricto (`_atributo`) y `@property`. |
-| **RNF03** | Persistencia | El catálogo inicial se cargará dinámicamente desde un archivo `juegos.json`. |
+## Usuario objetivo
+El sistema esta dirigido principalmente a los jugadores que quieren descubrir nuevos videojuegos que los entretengan y sean similares a otros que ya hayan jugado.
 
-## 4. Fuera de Alcance (Límites del MVP)
-* No se implementará autenticación ni perfiles de usuario.
-* No se almacenará historial de búsquedas ni preferencias guardadas.
-* No se conectará a APIs externas en tiempo real.
+## Funciones iniciales
+| ID | Funcionalidad |
+|---|---|
+| F1 | Buscar un videojuego por su nombre |
+| F2 | Listar videojuegos por género |
+| F3 | Mostrar el Top 10 de videojuegos mejor puntuados |
+| F4 | Recomendar videojuegos relacionados con uno seleccionado |
+| F5 | Ver videojuegos de la misma saga a partir de uno seleccionado |
 
-## 5. Ejemplo de Interacción (Interfaz de Terminal)
+## Ejemplo de uso
 
 ```text
 ========================================
-       GAMEFINDERBOT — TERMINAL
+              GAMEBOT
 ========================================
-1. Listar catálogo completo
-2. Buscar videojuego por título
-3. Filtrar videojuegos por género
+
+1. Buscar videojuego
+2. Explorar por género
+3. Ver Top 10 mejores
+4. Ver videojuegos relacionados
+5. Ver saga de videojuegos
 0. Salir
 
-Seleccione una opción: 2
-Ingrese el título a buscar: Minecraft
+Selecciona una opción: 4
 
-Resultados encontrados:
-- Minecraft | Género: Aventura | Rating: 9.5 | Precio: $29.99
+Ingrese un videojuego: Minecraft
+
+Seleccionando videojuegos a recomendar....
+
+Juegos relacionados a Minecraft que te pueden justar:
+
+- Stardew Valley
+- Terraria
+- Starbound
+- Don't Starve
+- Don't Starve Together
+```
+## Requerimientos
+| ID | Requerimiento | Tipo |
+|---|---|---|
+| RF01 | El sistema debe permitir buscar un videojuego por nombre | Funcional |
+| RF02 | El sistema debe permitir listar videojuegos por género | Funcional |
+| RF03 | El sistema debe mostrar los 10 videojuegos mejor puntuados | Funcional |
+| RF04 | El sistema debe mostrar videojuegos relacionados con un videojuego seleccionado | Funcional |
+| RF05 | El sistema debe mostar otros videojuegos de la misma saga que el videojuego seleccionado | Funcional |
+
+## Fuera de alcance (por ahora)
+- No hay autenticación ni perfiles de usuario.
+- No se crearán perfiles personalizados.
+- No se almacenarán preferencias personales de los usuarios.| Género: Aventura | Rating: 9.5 | Precio: $29.99
