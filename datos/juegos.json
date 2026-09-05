@@ -1,6 +1,38 @@
 [
     {
       "id": 1,
+      "titulo": "Minecraft",
+      "genero": "Aventura",
+      "desarrollador": "Mojang Studios",
+      "rating": 9.5,
+      "precio": 29.99
+    },
+    {
+      "id": 2,
+      "titulo": "Grand Theft Auto V",
+      "genero": "Accion",
+      "desarrollador": "Rockstar Games",
+      "rating": 9.2,
+      "precio": 29.99
+    },
+    {
+      "id": 3,
+      "titulo": "Roblox",
+      "genero": "Multijugador",
+      "desarrollador": "Roblox Corporation",
+      "rating": 7.9,
+      "precio": 0.0
+    },
+    {
+      "id": 4,
+      "titulo": "Counter-Strike 2",
+      "genero": "Shooter",
+      "desarrollador": "Valve",
+      "rating": 8.8,
+      "precio": 0.0
+    },
+    {
+      "id": 5,
       "titulo": "FIFA 24",
       "genero": "Deportes",
       "desarrollador": "EA Sports",
@@ -8,7 +40,7 @@
       "precio": 60.0
     },
     {
-      "id": 2,
+      "id": 6,
       "titulo": "Football Manager 2024",
       "genero": "Deportes",
       "desarrollador": "Sports Interactive",
@@ -16,7 +48,7 @@
       "precio": 50.0
     },
     {
-      "id": 3,
+      "id": 7,
       "titulo": "Rocket League",
       "genero": "Deportes",
       "desarrollador": "Psyonix",
@@ -24,7 +56,63 @@
       "precio": 0.0
     },
     {
-      "id": 4,
+      "id": 8,
+      "titulo": "Valorant",
+      "genero": "Shooter",
+      "desarrollador": "Riot Games",
+      "rating": 8.0,
+      "precio": 0.0
+    },
+    {
+      "id": 9,
+      "titulo": "League of Legends",
+      "genero": "Estrategia",
+      "desarrollador": "Riot Games",
+      "rating": 8.1,
+      "precio": 0.0
+    },
+    {
+      "id": 10,
+      "titulo": "Fortnite",
+      "genero": "Battle Royale",
+      "desarrollador": "Epic Games",
+      "rating": 8.3,
+      "precio": 0.0
+    },
+    {
+      "id": 11,
+      "titulo": "Red Dead Redemption 2",
+      "genero": "Accion",
+      "desarrollador": "Rockstar Games",
+      "rating": 9.7,
+      "precio": 59.99
+    },
+    {
+      "id": 12,
+      "titulo": "Stardew Valley",
+      "genero": "Simulacion",
+      "desarrollador": "ConcernedApe",
+      "rating": 9.8,
+      "precio": 14.99
+    },
+    {
+      "id": 13,
+      "titulo": "Elden Ring",
+      "genero": "RPG",
+      "desarrollador": "FromSoftware",
+      "rating": 9.6,
+      "precio": 59.99
+    },
+    {
+      "id": 14,
+      "titulo": "The Witcher 3",
+      "genero": "RPG",
+      "desarrollador": "CD Projekt Red",
+      "rating": 9.5,
+      "precio": 39.99
+    },
+    {
+      "id": 15,
       "titulo": "eFootball 2024",
       "genero": "Deportes",
       "desarrollador": "Konami",
