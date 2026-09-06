@@ -1,32 +1,42 @@
-# Diagrama de clases - boceto inicial
+# Diagrama de clases
+
+> Actualizado en TP1 con la implementación de la v1.
 
 ```mermaid
 classDiagram
-    class Juego {
-        -int id
-        -string titulo
-        -string genero
-        -string desarrollador
-        -float rating
-        -float precio
-        +getId() int
-        +getTitulo() string
-        +getGenero() string
-        +getDesarrollador() string
-        +getRating() float
-        +getPrecio() float
-        +es_similar(otro) bool
+
+    class Videojuego {
+
+        -id: int
+        -titulo: str
+        -genero: str
+        -desarrollador: str
+        -rating: float
+        -precio: float
+
+        +id() int
+        +titulo() str
+        +genero() str
+        +desarrollador() str
+        +rating() float
+        +precio() float
+        +repr() str
     }
 
-    class CatalogoJuegos {
-        -list juegos
-        +agregar_juego(juego) bool
-        +buscar_por_titulo(titulo) Juego
-        +filtrar_por_genero(genero) list
-        +obtener_top_n(n) list
+    class Catalogo {
+
+        -videojuegos: list
+
+        +cargar_desde_json(ruta) None
+        +buscar(titulo) Videojuego
+        +listar() list
+        +filtrar(genero) list
+        +top_10() list
+        +relacionados(titulo) list
+        +alternativas_desarrollador(titulo) list
     }
 
-    CatalogoJuegos "1" o-- "*" Juego : almacena
+    Catalogo "1" o-- "*" Videojuego : contiene
 ```
 
 ```text
@@ -34,7 +44,7 @@ classDiagram
 Título: Minecraft
 
 ╔══════════════════════════════════════╗
-║           🎬 CINEBOT                ║
+║           🎬 GAMeBOT                ║
 ╠══════════════════════════════════════╣
 ║ Si te gustó Minecraft, quizás te     ║
 ║ interesen:                           ║

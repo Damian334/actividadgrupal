@@ -1,4 +1,4 @@
-# GameBot
+# GAMeBOT
 Es el asiste virtual que se encargara de buscar, explorar y recomendar distintos videojuegos a partir de caracteristicas y relaciones con titulos que hayas jugado y te gustaran.
 
 ## Dominio elegido
@@ -7,7 +7,7 @@ Además es algo que a todos nos gusta ya que es un ambito muy popular hoy en dí
 
 ## Problema que resuelve
 Los jugadores pueden tener un problema al elegir que jugar despues de haber completado un videojuegos que los engancho demaciado.
-Es por eso que GameBot busca solucionar este problema, ofreciendo recomendaciones a partir de videojuegos conocidos y sus características.
+Es por eso que GAMeBOT busca solucionar este problema, ofreciendo recomendaciones a partir de videojuegos conocidos y sus características.
 
 ## Usuario objetivo
 El sistema esta dirigido principalmente a los jugadores que quieren descubrir nuevos videojuegos que los entretengan y sean similares a otros que ya hayan jugado.
@@ -25,14 +25,14 @@ El sistema esta dirigido principalmente a los jugadores que quieren descubrir nu
 
 ```text
 ========================================
-              GAMEBOT
+              GAMeBOT
 ========================================
 
 1. Buscar videojuego
 2. Explorar por género
 3. Ver Top 10 mejores
 4. Ver videojuegos relacionados
-5. Ver saga de videojuegos
+5. Ver al ternativas del desarrollador
 0. Salir
 
 Selecciona una opción: 4
@@ -56,7 +56,7 @@ Juegos relacionados a Minecraft que te pueden justar:
 | RF02 | El sistema debe permitir listar videojuegos por género | Funcional |
 | RF03 | El sistema debe mostrar los 10 videojuegos mejor puntuados | Funcional |
 | RF04 | El sistema debe mostrar videojuegos relacionados con un videojuego seleccionado | Funcional |
-| RF05 | El sistema debe mostar otros videojuegos de la misma saga que el videojuego seleccionado | Funcional |
+| RF05 | Sugerir alternativas basadas en coincidencias de desarrollador o género | Funcional |
 
 ## Fuera de alcance (por ahora)
 - No hay autenticación ni perfiles de usuario.
