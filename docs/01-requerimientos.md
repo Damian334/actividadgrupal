@@ -3,7 +3,7 @@ Es el asiste virtual que se encargara de buscar, explorar y recomendar distintos
 
 ## Dominio elegido
 Elegimos los videojuegos ya que tiene una gran base de información, como nombres, generos, puntuaciones, plataformas y relaciones entre titulos.
-Además es algo que a todos nos gusta ya que es un ambito muy popular hoy en día, uno si tiene una computadora, una consola o incluso en un celular, va a descargar juegos para entrenerse y pasar el rato.
+Además es algo que a todos nos gusta ya que es un ambito muy popular hoy en día, uno si tiene una computadora, una consola o incluso en un celular, va a descargar juegos para entretenerse y pasar el rato.
 
 ## Problema que resuelve
 Los jugadores pueden tener un problema al elegir que jugar despues de haber completado un videojuegos que los engancho demaciado.
