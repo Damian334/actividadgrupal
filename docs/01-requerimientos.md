@@ -1,4 +1,4 @@
-# GameBot
+# GAMEBOT
 Es el asiste virtual que se encargara de buscar, explorar y recomendar distintos videojuegos a partir de caracteristicas y relaciones con titulos que hayas jugado y te gustaran.
 
 ## Dominio elegido
@@ -61,4 +61,4 @@ Juegos relacionados a Minecraft que te pueden justar:
 ## Fuera de alcance (por ahora)
 - No hay autenticación ni perfiles de usuario.
 - No se crearán perfiles personalizados.
-- No se almacenarán preferencias personales de los usuarios.
+- No se almacenarán preferencias personales de los usuarios.| Género: Aventura | Rating: 9.5 | Precio: $29.99
