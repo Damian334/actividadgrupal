@@ -1,5 +1,6 @@
 from servicios.catalogo import Catalogo
 from ui.terminal import MenuTerminal
+from estructuras.arbol_binario import ArbolBST
 
 def main():
     catalogo = Catalogo()
