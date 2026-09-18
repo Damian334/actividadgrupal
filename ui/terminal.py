@@ -1,12 +1,14 @@
 import os
 
 from servicios.catalogo import Catalogo
+from estructuras.arbol_binario import ArbolBST
 
 
 class MenuTerminal:
 
-    def __init__(self, catalogo: Catalogo):
+    def __init__(self, catalogo: Catalogo, arbol: ArbolBST):
         self._catalogo = catalogo
+        self._arbol = arbol
 
     def _limpiar_pantalla(self):
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -58,7 +60,10 @@ class MenuTerminal:
     def _buscar_por_titulo(self):
         titulo = input("\nIngrese el título a buscar: ").strip()
 
-        juego = self._catalogo.buscar(titulo)
+        juego = self._arbol.buscar(
+            titulo.lower(),
+            clave=lambda videojuego: videojuego.titulo.lower()
+        )
 
         if juego:
             print("\n--- VIDEOJUEGO ENCONTRADO ---")
@@ -67,6 +72,7 @@ class MenuTerminal:
             print(f"Desarrollador: {juego.desarrollador}")
             print(f"Rating: {juego.rating}")
             print(f"Precio: ${juego.precio}")
+
         else:
             print(f"\nNo se encontró el videojuego '{titulo}'.")
 
@@ -84,6 +90,7 @@ class MenuTerminal:
                     f"Rating: {juego.rating} | "
                     f"Desarrollador: {juego.desarrollador}"
                 )
+
         else:
             print(f"\nNo hay juegos del género '{genero}'.")
 
@@ -108,7 +115,10 @@ class MenuTerminal:
         resultados = self._catalogo.relacionados(titulo)
 
         if resultados:
-            print(f"\n--- VIDEOJUEGOS RELACIONADOS CON {titulo.upper()} ---")
+            print(
+                f"\n--- VIDEOJUEGOS RELACIONADOS CON "
+                f"{titulo.upper()} ---"
+            )
 
             for juego in resultados:
                 print(
@@ -116,6 +126,7 @@ class MenuTerminal:
                     f"Género: {juego.genero} | "
                     f"Rating: {juego.rating}"
                 )
+
         else:
             print("\nNo se encontraron videojuegos relacionados.")
 
@@ -135,5 +146,9 @@ class MenuTerminal:
                     f"- {juego.titulo} | "
                     f"Rating: {juego.rating}"
                 )
+
         else:
-            print("\nNo se encontraron otras alternativas del desarrollador.")
+            print(
+                "\nNo se encontraron otras alternativas "
+                "del desarrollador."
+            )
