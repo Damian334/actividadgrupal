@@ -18,6 +18,8 @@ En este trabajo se presenta GAMeBOT, un asistente virtual que recomienda videoju
 
 - TP0: completado
 - TP1: Completado
+- TP2: No realizado
+- TP3: Completado
 
 ## Arquitectura del Sistema
 
@@ -53,3 +55,4 @@ python -m unittest discover tests
 ## Muestras
 [Preuba de funcionamiento del menu v1] (docs\capturas\Prueba-menu01.jpg)
 [Preuba de funcionamiento del menu v2] (docs\capturas\Prueba-menu02.jpg)
+[Preuba de funcionamiento del arbol vinario] (docs\capturas\Test-arbol-binario.jpg)
