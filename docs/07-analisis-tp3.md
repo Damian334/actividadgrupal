@@ -15,7 +15,7 @@ podemos utilizar el título como clave para recorrer el árbol y encontrar el vi
 ## 3. Prueba del árbol
 Acá dejamos la salida de `python algoritmos/probar_bst.py`:
 
-[Preuba de funcionamiento del arbol vinario](docs\capturas\Test-arbol-binario.jpg)
+[Preuba de funcionamiento del arbol vinario](docs/capturas/Test-arbol-binario.jpg)
 
 
 ## 4. Comparación de tiempos
