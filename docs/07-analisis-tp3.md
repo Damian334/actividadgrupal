@@ -34,7 +34,7 @@ buscar utilizando una clave y recorrerlo mediante los recorridos inorder, preord
 ## 7. Errores o dudas que tuvimos
 Un problema que tuvimos fue durante la prueba de **probar_bts.py** cuando queriamos ejecutar el programa 
 python "algoritmos/probar_bst.py" en el bash ya que no encontraba la carpeta "estructuras".
-![muestra del errror] (docs\capturas\muestra-error.png)
+[muestra del errror] (docs/capturas/muestra-error.png)
 
 Como no lograbamos encontrarle la vuela al asunto le consultamos al chatbot y nos recomendo que 
 agregaramos al archivo **probar_bst.py** el siguiente codigo:
