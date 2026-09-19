@@ -39,9 +39,13 @@ python "algoritmos/probar_bst.py" en el bash ya que no encontraba la carpeta "es
 Como no lograbamos encontrarle la vuela al asunto le consultamos al chatbot y nos recomendo que 
 agregaramos al archivo **probar_bst.py** el siguiente codigo:
 
+```
 import sys
+
 import os
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+```
 
 Estas son unas instrucciones para que python pudiera encontrar la capeta principal del proyecto  y, 
 de esta forma, importar correctamente `ArbolBST`.
