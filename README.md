@@ -53,6 +53,6 @@ python -m unittest discover tests
 ```
 
 ## Muestras
-[Preuba de funcionamiento del menu v1] (docs\capturas\Prueba-menu01.jpg)
-[Preuba de funcionamiento del menu v2] (docs\capturas\Prueba-menu02.jpg)
-[Preuba de funcionamiento del arbol vinario] (docs\capturas\Test-arbol-binario.jpg)
+![Preuba de funcionamiento del menu v1] (docs\capturas\Prueba-menu01.jpg)
+![Preuba de funcionamiento del menu v2] (docs\capturas\Prueba-menu02.jpg)
+![Preuba de funcionamiento del arbol vinario] (docs\capturas\Test-arbol-binario.jpg)
