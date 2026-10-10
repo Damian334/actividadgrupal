@@ -6,10 +6,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from estructuras.avl import AVL
 from estructuras.arbol_binario import ArbolBST
-from modelos.juegos import Videojuego  # Importa desde tu juegos.py existente
-
+from modelos.juegos import Videojuego
 def probar_avl_vs_bst():
-    print("=== PRUEBA TP4/TP5: BOT RECOMENDADOR DE VIDEOJUEGOS ===")
+    print("=== PRUEBA AVL: GAMeBOT ===")
     
     # 10 videojuegos en orden alfabético estricto (peor caso para el BST)
     # Respetando tu constructor: (id_juego, titulo, genero, desarrollador, rating, precio)
