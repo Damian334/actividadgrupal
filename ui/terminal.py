@@ -2,20 +2,22 @@ import os
 
 from servicios.catalogo import Catalogo
 from estructuras.arbol_binario import ArbolBST
+from estructuras.heap import MaxHeapSimple  # 1. Importamos el Heap
 
 
 class MenuTerminal:
 
-    def __init__(self, catalogo: Catalogo, arbol: ArbolBST):
+    def __init__(self, catalogo: Catalogo, arbol: ArbolBST, heap: MaxHeapSimple):  # 2. Recibimos el heap por parámetro
         self._catalogo = catalogo
         self._arbol = arbol
+        self._heap = heap  # Lo guardamos como atributo
 
     def _limpiar_pantalla(self):
         os.system('cls' if os.name == 'nt' else 'clear')
 
     def _mostrar_encabezado(self):
         print("========================================")
-        print("          GAMeBOT - TERMINAL            ")
+        print("            GAMeBOT - TERMINAL            ")
         print("========================================")
 
     def ejecutar(self):
@@ -40,7 +42,7 @@ class MenuTerminal:
                 self._filtrar_por_genero()
 
             elif opcion == "3":
-                self._ver_top_10()
+                self._ver_top_10()  # Ahora usará el Heap
 
             elif opcion == "4":
                 self._ver_relacionados()
@@ -95,19 +97,20 @@ class MenuTerminal:
             print(f"\nNo hay juegos del género '{genero}'.")
 
     def _ver_top_10(self):
-        resultados = self._catalogo.top_10()
+        # 3. Consultamos directamente al Heap en lugar del catálogo
+        resultados = self._heap.obtener_top_n(10)
 
-        print("\n--- TOP 10 MEJORES VIDEOJUEGOS ---")
+        print("\n--- TOP 10 MEJORES VIDEOJUEGOS (Vía Heap) ---")
 
-        posicion = 1
-
-        for juego in resultados:
-            print(
-                f"{posicion}. {juego.titulo} | "
-                f"Rating: {juego.rating}"
-            )
-
-            posicion += 1
+        if resultados:
+            for posicion, juego in enumerate(resultados, 1):
+                print(
+                    f"{posicion}. {juego.titulo} | "
+                    f"Rating: ⭐{juego.rating} | "
+                    f"Género: {juego.genero}"
+                )
+        else:
+            print("\nNo hay elementos cargados en el ranking.")
 
     def _ver_relacionados(self):
         titulo = input("\nIngrese el título del videojuego: ").strip()
