@@ -16,7 +16,7 @@ def main():
         # para búsquedas por título
         arbol.insertar(
             videojuego,
-            lambda videojuego: videojuego.titulo.lower()
+            clave=lambda videojuego: videojuego.titulo.lower()
         )
         # Insertamos en el Heap (para el ranking de mejores ratings)
         heap.insertar(videojuego)

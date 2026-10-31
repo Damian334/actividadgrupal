@@ -1,10 +1,4 @@
 from collections import deque
-
-class NodoGeneral:
-    def __init__(self, data):
-        self.data = data
-        self.hijos = []
-
 class ArbolGeneral:from collections import deque
 
 class NodoGeneral:
@@ -111,4 +105,15 @@ class ArbolGeneral:
                     _preorder(hijo)
         _preorder(self.raiz)
         return resultado
-        
+
+    def profundidad_postorder(self):
+        resultado = []
+
+        def _postorder(nodo):
+            if nodo:
+                for hijo in nodo.hijos:
+                    _postorder(hijo)
+                resultado.append(nodo.data)
+
+        _postorder(self.raiz)
+        return resultado
